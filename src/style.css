@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(27, 67, 177);
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 1em 0;
+}
+
+body {
+  font-family: "Robot", sans-serif;
+}
+
+.page {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+#header {
+  height: 50px;
+  display: flex;
+  background: violet;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .title {
+  margin: 0;
+  padding: 0 1rem;
+  color: rgb(110, 68, 224);
+}
+
+#header .auth-options {
+  height: 100%;
+}
+
+#header .auth-options button {
+  background: rgb(170, 87, 170);
+  height: 100%;
+  padding: 0 1em;
+  color: rgb(219, 202, 202);
+  border: unset;
+}
+
+#header .auth-options button:hover {
+  background: rgb(211, 110, 211);
+  color: white;
+}
+
+/* form */
+.form label,
+form input {
+  display: block;
+}
+.form input {
+  margin-bottom: 1rem;
+}
+.form label {
+  margin-bottom: 0.2rem;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.1rem;
+  border: solid 1px #c2c2c2;
+  background: wheat;
+  border-radius: 8px;
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid rgb(145, 61, 255);
+  box-shadow: inset 0px 0px 15px rgba(157, 87, 248, 0.5);
+}
+
+.form input[type="submit"] {
+  border: 1px solid rgb(162, 103, 238);
+  background: rgb(170, 87, 170);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: azure;
+  font-size: 1.1rem;
+}
+
+/* error notice */
+
+.error-notice {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(117, 2, 2);
+  background: rgb(245, 173, 173);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.error-notice button {
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background: rgb(165, 50, 73);
+}
+/* media */
+@media screen and (max-width: 480px) {
+  #header .title {
+    font-size: 1.4rem;
+  }
+  #header .auth-options button {
+    padding: 0 0.6rem;
+  }
+} ;
